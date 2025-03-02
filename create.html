@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .container p{
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .services input{
+            width: 3%;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        .contact-options p{
+            display: block;
+            text-align:justify;
+        }
+        .contact-options a{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color:blue;
+            gap: 5px;
+        }
+        .contact-options a:hover{
+            text-decoration: underline;
+        }
+        
+        .remove i{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Contact Our Team</h2>
+        <p>Got any questions about the product or scaling on our platform?We're here to help.</p>
+        <p>Chat to our friendly team 24/7 and get onboard in less than 5 minutes.</p>
+            <form>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstName" name="firstname" placeholder="Enter your first name">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastName" name="lastname" placeholder="Enter your last name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Leave us a message..."></textarea>
+
+            <div class="services">
+                <h3>Services</h3>
+                <input type="checkbox" name="services" value="web-design">Website Design <br>
+                <input type="checkbox" name="services" value="ux-design"> UX Design <br>
+                <input type="checkbox" name="services" value="user-research"> User Research <br>
+                <input type="checkbox" name="services" value="content-creation"> Content Creation <br>
+                <input type="checkbox" name="services" value="strategy"> Strategy & Consulting <br>
+                <input type="checkbox" name="services" value="other"> Other
+            </div>
+
+            <button id="sendMessageButton" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-options">
+            <h3>Chat with us</h3>
+            <p>Speak to our friendly team via live chat.</p>
+            <a href="https://www.linkedin.com/in/bcrk/">
+                <div class="remove"><i class="fa-brands fa-linkedin"></i></div>
+                Start a chat with Linkedln</a>
+            <a href="https://web.whatsapp.com/">
+                <div class="remove"><i class="fa-brands fa-whatsapp"></i></div>
+                    Message us on Whatsapp</a>
+            <a href="https://www.facebook.com/">
+                <div class="remove"><i class="fa-brands fa-facebook"></i></div>
+                Connect with Facebook</a>
+
+            <h3>Call us</h3>
+            <p>Call our team Mon-Fri from 8am to 5pm.</p>
+            <strong><a href="tel:+91 9790785742"><div class="remove">
+                <i class="fa-solid fa-phone"></i></div>
+                +91 9790785742</a></strong>
+
+            <h3>Visit us</h3>
+            <p>Chat to us in person at our Pudukkotai HQ.</p>
+            <a href="https://maps.app.goo.gl/Z8ags1RoALsaPZyR9">
+                <div class="remove"><i class="fa-solid fa-location-dot"></i></div>
+                    Pudukkotai,Tamilnadu,India</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
